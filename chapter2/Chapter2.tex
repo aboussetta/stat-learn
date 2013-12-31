@@ -1,0 +1,31 @@
+\documentclass{article}
+\usepackage[english]{babel}
+\usepackage{amsmath,amsfonts,amsthm}
+
+
+\title{Chapter 2 Solutions}
+% Removes the date
+% Idea from http://tex.stackexchange.com/questions/2760/omitting-the-date-when-using-maketitle
+\date{\vspace{-5ex}} 
+
+\author{Robert M. Johnson}
+
+\begin{document}
+\maketitle
+
+
+
+\section*{Ex. 2.1}
+Given any $t$ probability vector, is it true that only one of its elements determines the best fit for some y? $ \min || t - y ||  =  \min\limits_{k} \sum\limits_{i} (x_i - t_i)^2 = \min\limits_{k} \sum\limits_{i} ({y_i}^2 + {t_i}^2 - 2x_it_i) $. Now, the sum of ${y_i}^2$ and ${t_i}^2$ both always equals 1 since they are probability vectors. Thus, we ignore these terms in making our decision. The last term in the sum, however, will be zero except for the term where $y_i = 1$. And this term is multiplied by $ t_k$. And since this term is being subtracted, we want to maximize it to minimize $ \min || t - y ||$. Thus, choosing the closest target
+
+\begin{align} 
+\begin{split}
+(x+y)^3 	&= (x+y)^2(x+y)\\
+&=(x^2+2xy+y^2)(x+y)\\
+&=(x^3+2x^2y+xy^2) + (x^2y+2xy^2+y^3)\\
+&=x^3+3x^2y+3xy^2+y^3
+\end{split}					
+\end{align}
+
+
+\end{document}
